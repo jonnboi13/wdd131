@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-rows: 1.5fr 0.5fr 4fr 2.5fr; 
+    grid-template-rows: 2fr 4fr 2.5fr; 
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -17,15 +17,11 @@ body {
     color: white;
     text-align: center;
   }
-
-  header, footer {
-    padding: 1rem;
-  }
   
   nav {
     background-color: black;
-    padding: 1rem;
-}
+    padding: 0.2rem; /* Reduce padding here */
+  }
   
   #header-nav {
     list-style: none;
@@ -44,10 +40,9 @@ body {
     display: block;
     text-decoration: none;
     color: white;
-    padding: .75rem;
+    padding: .2rem; /* Reduce padding here */
   }
   
-
   main {
     display: grid;
     grid-template-columns: 3fr 1fr;
