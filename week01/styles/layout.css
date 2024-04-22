@@ -1,10 +1,9 @@
 body {
     display: grid;
-    grid-template-rows: 1.5fr 0.5fr 4fr 2.5fr; /* Header, main content, footer */
-    grid-template-columns: auto 1fr auto; /* Aside takes less width */
+    grid-template-rows: 1.5fr 0.5fr 4fr 2.5fr; 
     font-family: sans-serif;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
   }
   
   header {
@@ -21,13 +20,11 @@ body {
 
   header, footer {
     padding: 1rem;
-    grid-column: 1 / 4;  /* Spans all columns for header and footer */
   }
   
   nav {
     background-color: black;
     padding: 1rem;
-    grid-column: 1 / 4;  /* Spans all columns for navigation bar */
 }
   
   #header-nav {
@@ -35,8 +32,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
   }
   
   #header-nav li {
