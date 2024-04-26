@@ -97,7 +97,7 @@ main {
 }
 
 #bottom-para {
-    grid-column: 1 / -1;
+    grid-column: 1 / 2;
 }
 
 .card ul {
@@ -106,11 +106,11 @@ main {
 }
 
 .card ul li {
-    margin: 1rem;
+    margin: 1.25rem;
 }
 
 img {
-    max-width: 100px;
+    max-width: 75px;
     padding: 40px 10px;
     grid-column: 2 / 3;
 }
