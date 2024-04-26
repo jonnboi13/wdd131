@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+
+
+body {
+    font-family: Sedan, sans-serif;
+}
+
+header {
+    background-color: #3B2E8A;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+  }
+
+nav {
+      background-color:black;
+    }
+    
+#header-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+#header-nav li {
+    flex: 1 1 auto;
+}
+
+#header-nav a {
+    display: block;
+    text-decoration: none;
+    padding: .5rem; /* Reduce padding here */
+    font-weight: 600;
+    color: white;
+}
+
+#header-nav a:hover {
+    background-color: gray;
+    color: black;
+}
+
+
+footer {
+  background-color: #3B2E8A;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+    margin: 5px;
+    color: white;
+}
+
+#last-modified {
+    color: yellow;
+    font-size: .75em;
+}
+
+main {
+    max-width: 800px;
+    height: auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px auto;
+}
+
+
+.card {
+    outline: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 0px 5px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
+    overflow: hidden;
+}
+
+.card h2 {
+    text-align: center;
+    background-color: #3B2E8A;
+    margin-top: auto;
+    padding: 5px;
+    font-size: 1em;
+    grid-column: 1 / -1;
+    color: white;
+}
+
+.card p {
+    padding: 15px;
+    grid-column: 1 / 2;
+}
+
+#bottom-para {
+    grid-column: 1 / -1;
+}
+
+.card ul {
+    padding-top: 75px;
+    grid-column: 1 / -1;
+}
+
+.card ul li {
+    margin: 1rem;
+}
+
+img {
+    max-width: 100px;
+    padding: 40px 10px;
+    grid-column: 2 / 3;
+}
