@@ -1,0 +1,102 @@
+
+
+header, main, footer {
+    max-width: 640px;
+    margin: auto;
+    border: 1px solid #bbb;
+    padding: .5rem;
+}
+
+header {
+    background-color: #3B2E8A;
+    color: white;
+    font-size: 10px;
+    align-items: center;
+  }
+
+    
+#header-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+
+}
+
+#header-nav li {
+    flex: 1 1 auto;
+}
+
+#header-nav a {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: .75rem;
+
+}
+
+#header-nav a:hover {
+    background-color: gray;
+    color: black;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;;
+}
+
+img {
+    width: 100%;
+}
+
+
+footer {
+    background-color: #3B2E8A;
+    color: black;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+      margin: 5px;
+      color: white;
+  }
+  
+  #last-modified {
+      color: yellow;
+      font-size: .75em;
+  }
+
+  /* Initially hide the navigation menu */
+#header-nav {
+    display: none;
+}
+
+/* Show the navigation menu when the 'open' class is present */
+#header-nav.open {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}    
+    
+
+#hamburger-button {
+    position: absolute;
+	top: 2rem;
+	right: 1.5rem;
+}
+
+
+#hamburger-button::before {
+	content: "☰";
+}
+
+#hamburger-button.open::before {
+	content: "❌";
+}
