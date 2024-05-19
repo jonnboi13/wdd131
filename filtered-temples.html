@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="An album showing temples and practicing mobile first developing.">
+    <meta name="author" content="Jonathan Oliphant">
+    <link rel="preload" href="styles/filtered-temples-large.css" as="style">
+    <link rel="preload" href="styles/filtered-temples.css" as="style">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-button"></button>
+        <nav class="navigation">
+            <ul id="header-nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Old</a></li>
+                <li><a href="">New</a></li>
+                <li><a href="">Large</a></li>
+                <li><a href="">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="grid">
+            <h2>Home</h2>
+            <div id="temples"></div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>| Jonathan Oliphant | Missouri
+        </p>
+        
+        <p id="last-modified">
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>
