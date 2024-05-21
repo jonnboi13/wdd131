@@ -26,42 +26,6 @@ const products = [
     }
 ];
 
-const features = [
-    "Durability",
-    "Ease of Use",
-    "Performance",
-    "Design",
-    // Add more features as needed
-];
-
-// Select the fieldset element
-let fieldsetElement = document.getElementById('usefulFeatures');
-
-// Loop over the features array
-features.forEach((feature, index) => {
-    // Create a new div element
-    let div = document.createElement('div');
-
-    // Create a new input element
-    let input = document.createElement('input');
-
-    // Set the attributes of the input
-    input.type = 'checkbox';
-    input.id = 'feature' + (index + 1);
-    input.name = 'feature';
-
-    // Create a label for the input
-    let label = document.createElement('label');
-    label.htmlFor = input.id;
-    label.textContent = feature;
-
-    // Append the input and label to the div
-    div.appendChild(input);
-    div.appendChild(label);
-
-    // Append the div to the fieldset
-    fieldsetElement.appendChild(div);
-});
 
 // Select the select element
 let selectElement = document.getElementById('product');
