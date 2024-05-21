@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A form for submitting product reviews.">
+    <meta name="author" content="Jonatha Oliphant">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <label>Product Name:
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <!-- The remaining options will be added dynamically using JavaScript -->
+                </select>
+            </label>
+    
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <div class="radio-group">
+                    <label><input type="radio" id="rating1" name="rating" value="1" required> <span>☆</span></label>
+                    <label><input type="radio" id="rating2" name="rating" value="2" required> <span>☆☆</span></label>
+                    <label><input type="radio" id="rating3" name="rating" value="3" required> <span>☆☆☆</span></label>
+                    <label><input type="radio" id="rating4" name="rating" value="4" required> <span>☆☆☆☆</span></label>
+                    <label><input type="radio" id="rating5" name="rating" value="5" required> <span>☆☆☆☆☆</span></label>
+                </div>
+            </fieldset>
+    
+            <label>Date of Installation:
+                <input type="date" id="date" name="date" required>
+            </label>
+    
+            <fieldset id="usefulFeatures">
+                <legend>Useful Features:</legend>
+                <!-- The checkboxes will be added dynamically using JavaScript -->
+            </fieldset>
+    
+            <label>Written Review:
+                <textarea id="review" name="review"></textarea>
+            </label>
+    
+            <label>User Name:
+                <input type="text" id="username" name="username">
+            </label>
+    
+            <input type="submit" value="Submit My Review">
+        </form>
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>| Jonathan Oliphant | <br><span>Missouri</span>
+        </p>
+        
+        <p id="last-modified">
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+</html>

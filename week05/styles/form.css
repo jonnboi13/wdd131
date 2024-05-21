@@ -1,0 +1,200 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS. */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/* Apply a natural box layout model to all elements */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY */
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    max-width: 400px;
+    margin: 0 auto; /* Center the content */
+}
+
+/* FORM STYLING */
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #00008b;
+    padding: 0 .5rem;
+}
+
+form label {
+    display: block;
+    margin: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;   
+}
+
+
+label > * {
+    display: block;
+    margin-top: .5rem;
+
+}
+
+form fieldset div {
+    display: flex;
+    line-height: 0; /* Adjust as needed */
+    margin: 0; /* Remove margin */
+}
+
+form fieldset div label {
+    display: inline-block;
+    margin-left: 0; /* Move text to the left */
+}
+
+form div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"],
+form input[type="url"],
+form input[type="date"],
+form select,
+form input[type="number"]
+{
+    background-color: #eee;
+    display: block;
+    border: 1px solid #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] 
+{
+    margin-right: 6px;
+} 
+
+form input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(#9c2c13,#6f200e);
+    color: #fff;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+form input:required {
+    border-left: solid 8px red;
+}
+
+form input:required:valid {
+    border-left: solid 8px green;
+}
+
+form select:required {
+    border-left: solid 8px red;
+}
+
+form select:required:valid {
+    border-left: solid 8px green;
+}
+
+footer {
+    background-color: #3B2E8A;
+    color: black;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  footer p {
+      margin: 5px;
+      color: white;
+  }
+  
+  #last-modified {
+      color: yellow;
+      font-size: .75em;
+  }
+
+
+
+  form fieldset div.radio-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 400px;
+    margin: 0;
+}
+
+form fieldset div.radio-group label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+form fieldset div.radio-group label span {
+    order: 1; 
+    margin-bottom: 10px;
+}
+
+form fieldset div.radio-group label input[type="radio"] {
+    order: 2;
+    margin: 0;
+}
+
+
+form {
+    color: #00008b;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+}
+
+form input[type="checkbox"],
+form input[type="radio"] {
+    color: yellow;
+}
+
+form label {
+    color: black;
+}
+  
+input[type="checkbox"] + label {
+    vertical-align: middle;
+}
+
+form {
+    padding-top: 5px;
+}
+
+
+header {
+        background-color: #3B2E8A;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: .9rem;
+    }
+
+header, main, footer {
+    margin-bottom: 20px; /* Add space below the elements */
+}
+
+main {
+    border-radius: 10px;
+}
+
+textarea {
+    height: 100px;
+    width: 300px;;
+}
