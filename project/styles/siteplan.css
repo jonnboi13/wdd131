@@ -1,0 +1,45 @@
+/* CSS for siteplan.html */
+
+:root {
+    --primary-color: #B14D6A;
+    --secondary-color: #FDF5E6;
+    --background-color: #FDF5E6; /* Creamy white */
+}
+
+body {
+    font-family: 'Gelasio', serif;
+    background-color: #FDF5E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: var(--primary-color);
+}
+
+p {
+    color: black;
+}
+
+#primary-color, #secondary-color {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+#primary-color {
+    background-color: black;
+    color: white;    
+}
+
+#secondary-color {
+    background-color: var(--secondary-color);
+    color: #FDF5E6;
+}
