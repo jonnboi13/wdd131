@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jon's Flavorful Favorites</title>
+    <meta name="author" content="Jonathan Oliphant">
+    <meta name="description" content="This is a cookbook website for my final project in WDD131">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio&family=Raleway&display=swap" rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Jon's Flavorful Favorites</h1>
+        <button id="menu-button"></button>
+        <nav class="navigation">
+            <ul id="header-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="greeting"></h2>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to Jon's Flavorful Favorites! Here you can find a variety of my favorite recipes to make!</p>
+            <p>There are many different recipes here for whatever you may be craving! Breakfast, Dinner, Snack, or Dessert. </p>
+            <p>Take a look around and get to cooking!</p>
+            <img src="images/utensils.webp" alt="baking utensils" width="100" height="150" id="utensils">
+        </section>
+        <section id="random">
+            <h2>Random Recipe</h2>
+            <div id="random-recipe">
+                <img src="null" alt="Random Recipe" width="300" height="300">
+                <div id="random-recipe-info">
+                    <h3 id="recipe-name"></h3>
+                    <p id="recipe-desc"></p>
+                    <a href="recipes.html">View Recipe</a>
+                </div>
+            </div>
+        </section>
+        <section id="get-involved">
+            <h2>Get Involved</h2>
+            <p>Do you have a favorite recipe that you would like to see on this site? </p>
+            <p>If you'd like to send me the recipe, I will try it out and if I like it I might add it to the cookbook!</p>
+            <a href="contact.html">Contact Me</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>| Jonathan Oliphant | Missouri
+        </p>
+    </footer>  
+
+</body>
+</html>

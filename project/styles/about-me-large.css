@@ -1,0 +1,31 @@
+@media screen and (min-width:600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu-button {
+        display: none;
+    }
+    #header-nav {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+    
+    
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    #random {
+        height: 100%;
+        margin-top: 5rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+}

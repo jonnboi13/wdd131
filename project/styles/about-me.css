@@ -1,0 +1,115 @@
+body {
+    max-width: 1800px;
+    background: #FDF5E6;
+    margin: 0 auto;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 5px;
+    color: black;
+}
+
+#last-modified {
+    color: #B14D6A;
+    font-size: .75em;
+}
+
+footer, header {
+    background-color: #3BA6CF;
+}
+
+#header-nav, #header-nav a, .temple-card, footer, main h2 {
+    text-align: center;
+}
+
+footer, header, main {
+    margin: auto;
+    border: 1px solid #bbb;
+    padding: .5rem;
+}
+
+header {
+    color: black;
+    font-size: 10px;
+    align-items: center;
+}
+
+#header-nav {
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    display: none;
+}
+
+#header-nav li {
+    flex: 1 1 auto;
+}
+
+#header-nav a {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;   
+    padding: .75rem;
+}
+
+main section {
+    border: #000 solid 1px;
+}
+
+main {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+#random img {
+    height: auto;
+    object-fit: cover;
+}
+
+
+#header-nav a:hover {
+    background-color: gray;
+    color: #000;
+}
+
+#header-nav.open {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#menu-button {
+    position: absolute; 
+    top: 2rem;
+    right: 1.5rem;
+}
+
+#menu-button::before {
+    content: "☰";
+}
+
+#menu-button.open::before {
+    content: "❌";
+}
+
+main h1 {
+    color: #B14D6A;
+}
+
+#introduction, #get-involved, #random {
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+#utenils {
+    max-width: 100%;
+}
